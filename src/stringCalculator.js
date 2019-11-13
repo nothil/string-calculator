@@ -1,11 +1,15 @@
 module.exports = class stringCalculator{
     add(string){
         let added = 0;
-        let output = string.split(/[\n\,]/);
-        if(string == ""){
+        let output = string.replace(/[^\d.-]/g, '');
+        let checkNegative = parseInt(output);
+
+        if(string == "") {
             return "0";
-        }
-        else{
+        } else if (checkNegative < 0) {
+            return "negatives not allowed " + output;
+            
+        } else {
             for(let i =0; i < output.length; i++){
                 let changed = parseInt(output[i]);
                 added = added + changed;
