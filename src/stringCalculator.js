@@ -5,7 +5,7 @@ module.exports = class stringCalculator{
         let checkNegative = parseInt(output);
 
         if(string == "") {
-            return "0";
+            return "0"; // check the string is not empty
         } else if (checkNegative < 0) {
             return "negatives not allowed " + output;
             
