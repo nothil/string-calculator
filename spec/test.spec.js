@@ -35,5 +35,5 @@ describe("function takes a string",function() {
     
 });
 
-
-console.log(calculator.add("2,3,5"));
+//testing 
+console.log(calculator.add("2,@4"));
