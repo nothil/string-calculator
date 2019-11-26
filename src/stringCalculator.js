@@ -5,7 +5,7 @@
     let output = string.replace(/[^\d.-]/g, '');
         let checkNegative = parseInt(output);
 
-    // try{
+    
 
         let  negs = "";
 
@@ -27,8 +27,6 @@
                 added = added + changed;
             }return added;
         }
-    // }catch(Error){
-    //     return Error
-    // }
+    
     }
 }
