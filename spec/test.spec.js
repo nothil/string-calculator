@@ -28,11 +28,13 @@ describe("function takes a string",function() {
      });
     
     it("should give an error msg negatives not allowed", function(){
-        expect(function() {calculator.add("//;\n-22,3")}).toThrowError("Negatives are not allowed -22 ");
+        expect(function() {
+            calculator.add("//;\n-2,3")
+        }).toThrowError("Negatives are not allowed -2 ");
     });
 
     
 });
 
 // for testing 
-console.log(calculator.add("2,@4,-2"));
+//console.log(calculator.add("2,@4,-2"));
